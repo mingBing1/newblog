@@ -6,11 +6,16 @@ spring:
     url: jdbc:mysql://localhost:3306/blog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC
     username: root
     password: mnb123456
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
 
 
 mybatis:
   mapper-locations: classpath:mapping/*.xml
   type-aliases-package: com.ming.blog.entity
+
 
 #logging:
 #  level:
